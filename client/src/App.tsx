@@ -1,12 +1,11 @@
-import React from 'react'
+import Translate from "@components/Translate"
 
-function App() {
-
+const App: React.FC = () => {
   return (
     <>
-      <h1 className="font-boldt text-md">Vite + React</h1>
+      <Translate />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
