@@ -1,6 +1,7 @@
 import { useState, ChangeEvent } from "react";
 import { BeatLoader } from "react-spinners";
 import { translateText } from "@api/translate";
+import Footer from "./Footer";
 
 const Translate: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -48,25 +49,25 @@ const Translate: React.FC = () => {
 
   const handleCopy = () => {
     navigator.clipboard
-      .writeText(translation)
-      .then(() => displayNotification())
-      .catch((err) => console.error("Error al copiar texto: ", err));
+    .writeText(translation)
+    .then(() => displayNotification())
+    .catch((err) => console.error("Error al copiar texto: ", err));
   };
 
   const displayNotification = () => {
     setShowNotification(true);
     setTimeout(() => {
       setShowNotification(false);
-    }, 500);
+    }, 3000);
   };
 
   return (
     <div className="max-w-3xl mx-auto my-8 bg-white px-8 py-8 shadow-xl">
       <a href="/">
-      <h1 className="text-[#023047] font-semibold font-sans text-3xl mb-5">Translate Mate</h1>
+      <h1 className="text-[#023047] font-semibold font-sans text-3xl mb-8">Translate Mate</h1>
       </a>
-      <form className="flex flex-col gap-4" onSubmit={handleOnSubmit}>
-      <div className="flex gap-1 text-md font-medium">
+      <form className="flex flex-col gap-2" onSubmit={handleOnSubmit}>
+      <div className="flex text-sm font-medium">
       <input
             type="radio"
             name="language"
@@ -177,7 +178,7 @@ const Translate: React.FC = () => {
         {isLoading ? (
           <BeatLoader
             size={8}
-            color={"blue"}
+            color={"darkblue"}
             className="max-h-screen justify-center items-center"
           />
         ) : (
@@ -191,7 +192,7 @@ const Translate: React.FC = () => {
       >
         Copiado al portapapeles!
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };
