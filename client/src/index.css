@@ -9,12 +9,3 @@ body{
   background: #f5f7f8;
 }
 
-.indicator {
-  height: 2px;
-  background-color: transparent;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.indicator.bg-blue-500 {
-  background-color: #023047; /* Cambia este color al azul que desees */
-}
