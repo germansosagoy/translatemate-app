@@ -35,9 +35,11 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
   ```
 
 3. Crea una variable '.env' en la raíz del proyecto con tus claves de API. El contenido del archivo debería ser similar a esto:
+  ```bash
   VITE_RapidAPI_KEY=your-api-key
   VITE_BASE_URL=your-api-url
   VITE_QUERY_PARAMS=?api-version=3.0&profanityAction=NoAction&textType=plain
+  ```
 
 4. Inicia la aplicación
  ```bash
