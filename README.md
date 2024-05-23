@@ -24,12 +24,12 @@ Translate Mate es una aplicación web que permite traducir texto entre varios id
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/translate-mate.git
-   cd translate-mate
+  ```bash
+    git clone https://github.com/tu-usuario/translate-mate.git
+    cd translate-mate
+  ```
 
-
-2. Instala las dependencias:
+3. Instala las dependencias:
   ```bash
     npm install
   ```
