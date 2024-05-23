@@ -9,7 +9,7 @@ Translate Mate es una aplicación web que permite traducir texto entre varios id
 - Reproducir el texto traducido con síntesis de voz.
 - Interfaz de usuario limpia y receptiva.
 
-## Tecnologías Utilizadas
+## Stack
 
 - **React**: Biblioteca principal para construir la interfaz de usuario.
 - **TypeScript**: Lenguaje utilizado para una escritura tipada segura.
