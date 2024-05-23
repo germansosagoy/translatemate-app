@@ -64,4 +64,7 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 Este formato proporciona una lista numerada de los pasos a seguir, con los comandos relevantes formateados como bloques de código para mayor claridad.
 
 
+## Agradecimientos
+Este proyecto utiliza la Microsoft Translator API para las traducciones.
+
 
