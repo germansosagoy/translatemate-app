@@ -65,6 +65,6 @@ Este formato proporciona una lista numerada de los pasos a seguir, con los coman
 
 
 ## Agradecimientos
-Este proyecto utiliza la Microsoft Translator API para las traducciones.
+Este proyecto utiliza la <a href="https://learn.microsoft.com/en-us/azure/ai-services/translator/create-translator-resource">Microsoft Translator API</a> para las traducciones.
 
 
