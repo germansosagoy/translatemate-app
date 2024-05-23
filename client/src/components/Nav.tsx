@@ -11,12 +11,12 @@ const Nav: React.FC = () => {
             Translate Mate
           </h1>
         </a>
-        <div className="flex space-x-4 opacity-85">
+        <div className="flex space-x-4 opacity-90">
           <a
             href="https://github.com/germansosagoy"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-500 hover:text-black"
+            className="text-gray-500 duration-200 hover:text-black"
           >
             <Github size={18} />
           </a>
@@ -24,13 +24,13 @@ const Nav: React.FC = () => {
             href="https://linkedin.com/in/german-sosa-goy-/"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-500 hover:text-blue-800"
+            className="text-gray-500 duration-200 hover:text-blue-800"
           >
             <Linkedin size={18} />
           </a>
           <a
             href="mailto:germanesosagoy@gmail.com"
-            className="text-gray-500 hover:text-red-600"
+            className="text-gray-500 duration-200 hover:text-red-600"
           >
             <Mail size={18} />
           </a>

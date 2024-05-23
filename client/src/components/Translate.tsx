@@ -91,7 +91,7 @@ const Translate: React.FC = () => {
           />
           <label
             htmlFor="espanol"
-            className={`text-[#023047] h-8 w-20 flex items-center justify-center rounded-md cursor-pointer ${
+            className={`text-[#023047] h-8 w-16 flex items-center justify-center rounded-md cursor-pointer ${
               formData.language === "es"
                 ? "bg-[#023047bf] duration-300 text-white font-medium"
                 : ""
@@ -200,14 +200,14 @@ const Translate: React.FC = () => {
           </select> */}
         </div>
         {/* textarea form */}
-        <div className="flex space-x-4 mt-2">
+        <div className="flex space-x-2 mt-2">
           <textarea
             name="message"
             placeholder="Ingrese el texto a traducir aquí..."
-            className="flex-1 p-4 py-5 text-[16px] h-60 resize-none leading-5 border border-gray-300 focus:outline-none rounded-lg"
+            className="flex-1 p-4 py-5 text-[16px] h-64 resize-none leading-5 border border-slate-300 focus:hover:border-gray-200 rounded-lg"
             onChange={handleInputChange}
           />
-          <div className="flex-1 px-4 py-5 h-60 bg-[#f5f5f5] text-[16px] resize-none leading-5 border border-gray-100 focus:outline-none rounded-lg overflow-y-scroll relative">
+          <div className="flex-1 px-4 py-5 h-64 bg-[#f5f5f5] text-[16px] resize-none leading-5 border border-slate-200 focus:outline-none rounded-lg overflow-y-scroll relative">
             {showClipboard && (
               <button onClick={handleCopy} className="absolute w-5 top-4 right-3 opacity-90 cursor-pointer">
                 <Clipboard size={18}  className="opacity-60 duration-150 hover:opacity-90" />
