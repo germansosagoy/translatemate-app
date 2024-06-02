@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <>
       <Nav />
-      <Suspense fallback={<ClipLoader color='#023047' size={100} />}>
+      <Suspense fallback={<ClipLoader color='#023047' size={50} />}>
       <main className="flex-grow">
       <Translate />
       </main>
