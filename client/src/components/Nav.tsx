@@ -1,4 +1,4 @@
-import Logo from "../assets/logo-translatemate.png";
+import Logo from '@assets/logo-translatemate.webp';
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Nav: React.FC = () => {
