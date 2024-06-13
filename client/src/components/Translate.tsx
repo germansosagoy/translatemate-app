@@ -76,10 +76,10 @@ const Translate: React.FC = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto my-8 bg-white px-8 py-8 shadow-xl border border-gray-100">
+    <div className="max-w-7xl h-full mx-auto my-10 bg-white px-8 py-8 shadow-xl border border-gray-100">
       <form className="flex flex-col" onSubmit={handleOnSubmit}>
         {/* label language */}
-        <div className="flex text-sm font-medium">
+        <div className="flex text-sm font-medium animate-fade animate-delay-300 animate-once">
           <input
             type="radio"
             name="language"
@@ -91,7 +91,7 @@ const Translate: React.FC = () => {
           />
           <label
             htmlFor="espanol"
-            className={`text-[#023047] h-8 w-16 flex items-center justify-center rounded-md cursor-pointer ${
+            className={`text-[#023047] h-8 w-20 flex items-center justify-center rounded-md cursor-pointer ${
               formData.language === "es"
                 ? "bg-[#023047bf] duration-300 text-white font-medium"
                 : ""
@@ -200,7 +200,7 @@ const Translate: React.FC = () => {
           </select> */}
         </div>
         {/* textarea form */}
-        <div className="flex space-x-2 mt-2">
+        <div className="flex space-x-2 mt-2 animate-fade animate-delay-300 animate-once">
           <textarea
             name="message"
             placeholder="Ingrese el texto a traducir aquí..."
@@ -232,13 +232,13 @@ const Translate: React.FC = () => {
         {error && <div className="text-red-500">{error}</div>}
         <button
           type="submit"
-          className="flex justify-center items-center max-w-[540px] p-2 text-[16px] border-none bg-[#022f45] hover:bg-[#022f45d8] duration-300 rounded-lg text-white cursor-pointer mt-6"
+          className="animate-fade animate-delay-300 animate-once flex justify-center items-center max-w-[540px] p-2 text-[16px] border-none bg-[#022f45] hover:bg-[#022f45d8] duration-300 rounded-lg text-white cursor-pointer mt-6"
         >
           Traducir
         </button>
       </form>
       {showNotification && (
-        <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 transition-transform ease-in-out duration-300 bg-[#022f45] text-white text-xs py-2 px-2 rounded">
+        <div className="animate-fade animate-delay-300 rounded-md animate-once fixed bottom-5 left-1/2 transform -translate-x-1/2 transition-transform ease-in-out duration-300 bg-[#022f45] text-white text-xs py-2.5 px-2.5 rounded">
           Copiado al portapapeles!
         </div>
       )}
